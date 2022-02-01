@@ -1,0 +1,28 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "first project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viltorn/frontend-project-lvl1.git"
+  },
+  "author": "Viktor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Viltorn/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/Viltorn/frontend-project-lvl1#readme",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
