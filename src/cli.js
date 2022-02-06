@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
 
 const greetings = () => {
-  const name = readlineSync.question('May I have your name? ');
+  const userName = readlineSync.question('May I have your name? ');
   // eslint-disable-next-line no-console
-  console.log(`Hello, ${name}!`);
+  console.log(`Hello, ${userName}!`);
+  return userName;
 };
 export default greetings;
