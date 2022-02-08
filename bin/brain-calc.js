@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import evenNumber from '../games/even.js';
+import calculate from '../games/calc.js';
 import { numberOfRounds } from '../src/index.js';
 
-evenNumber(numberOfRounds);
+calculate(numberOfRounds);
