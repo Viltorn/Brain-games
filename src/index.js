@@ -11,7 +11,7 @@ export const gameChain = (value, correct, user) => {
     console.log('Correct!');
   } else {
     console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correct}'`);
-    console.log(`Let's try again, ${user}`);
+    console.log(`Let's try again, ${user}!`);
     return false;
   }
   return true;
