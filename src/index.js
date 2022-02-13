@@ -1,18 +1,27 @@
 import readlineSync from 'readline-sync';
+import greetings from '../src/cli.js';
 
-export const numberOfRounds = 3;
+console.log('Welcome to the Brain Games!');
+const userName = greetings();
+console.log('What is the result of the expression?');
 
-export const randomNumber = () => Math.floor(Math.random() * 99 + 1);
+const numberOfRounds = 3;
 
-export const gameChain = (value, correct, user) => {
-  console.log(`Question: ${value}`);
-  const playerAnswer = readlineSync.question('Your answer: ');
-  if (correct === playerAnswer) {
-    console.log('Correct!');
-  } else {
-    console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correct}'`);
-    console.log(`Let's try again, ${user}!`);
-    return false;
+const gameChain = (currentGame) => {
+  let counter = 1;
+  while (counter <= numberOfRounds) {
+    const [question, answer] = currentGame();
+    console.log(`Question: ${question}`);
+    const playerAnswer = readlineSync.question('Your answer: ');
+    if (answer === playerAnswer) {
+      console.log('Correct!');
+    } else {
+      console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
+    }
+    counter += 1;
   }
-  return true;
+  console.log(`Congratulations, ${userName}!`);
 };
+export default gameChain;

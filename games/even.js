@@ -5,11 +5,12 @@ console.log('Welcome to the Brain Games!');
 const userName = greetings();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-const evenNumber = (param) => {
+const isEven = (number) => number % 2 === 0;
+const playEvenGame = (param) => {
   let counter = 1;
   while (counter <= param) {
     const currentNumber = randomNumber();
-    const correctAnswer = (currentNumber % 2 === 0) ? 'yes' : 'no';
+    const correctAnswer = (isEven(currentNumber)) ? 'yes' : 'no';
     if (gameChain(currentNumber, correctAnswer, userName) === false) {
       return;
     }
