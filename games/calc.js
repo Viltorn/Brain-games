@@ -1,26 +1,25 @@
-import { cons, car, cdr } from '@hexlet/pairs';
-import { getRandomElement, getRandomNumber } from '../src/utils.js';
+import { getRandomNumber } from '../src/utils.js';
 
+export const calcDescription = 'What is the result of the expression?';
 const symbols = ['+', '-', '*'];
 
-const playCalcGame = () => {
-  const firstNumber = getRandomNumber();
-  const secondNumber = getRandomNumber();
-  const randomSign = getRandomElement(symbols);
+export const playCalcGame = () => {
+  const firstNumber = getRandomNumber(0, 100);
+  const secondNumber = getRandomNumber(0, 100);
+  const randomSign = symbols[getRandomNumber(0, symbols.length - 1)];
   if (randomSign === '+') {
-    const result = String(firstNumber + secondNumber);
     const expression = `${firstNumber} + ${secondNumber}`;
-    const pair = [expression, result];
-    return pair;
+    const expressionResult = String(firstNumber + secondNumber);
+    const result = [expression, expressionResult];
+    return result;
   }
   if (randomSign === '-') {
-    const result = String(firstNumber - secondNumber);
     const expression = `${firstNumber} - ${secondNumber}`;
-    const pair = [expression, result];
-    return pair;
-  } const result = String(firstNumber * secondNumber);
-  const expression = `${firstNumber} * ${secondNumber}`;
-  const pair = [expression, result];
-  return pair;
+    const expressionResult = String(firstNumber - secondNumber);
+    const result = [expression, expressionResult];
+    return result;
+  } const expression = `${firstNumber} * ${secondNumber}`;
+  const expressionResult = String(firstNumber * secondNumber);
+  const result = [expression, expressionResult];
+  return result;
 };
-export default playCalcGame;

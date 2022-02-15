@@ -1,15 +1,13 @@
 import readlineSync from 'readline-sync';
 import greetings from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
-const userName = greetings();
-console.log('What is the result of the expression?');
-
 const numberOfRounds = 3;
 
-const gameChain = (currentGame) => {
-  let counter = 1;
-  while (counter <= numberOfRounds) {
+const gameChain = (currentGame, currentDescription) => {
+  console.log('Welcome to the Brain Games!');
+  const userName = greetings();
+  console.log(currentDescription);
+  for (let i = 1; i <= numberOfRounds; i += 1) {
     const [question, answer] = currentGame();
     console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer: ');
@@ -20,7 +18,6 @@ const gameChain = (currentGame) => {
       console.log(`Let's try again, ${userName}!`);
       return;
     }
-    counter += 1;
   }
   console.log(`Congratulations, ${userName}!`);
 };
