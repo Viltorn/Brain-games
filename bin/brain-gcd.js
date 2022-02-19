@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import randomNumbersDevider from '../games/gcd.js';
-import { numberOfRounds } from '../src/index.js';
+import runGcdGAme from '../src/games/gcd.js';
 
-randomNumbersDevider(numberOfRounds);
+runGcdGAme();

@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import mathProgression from '../games/progression.js';
-import { numberOfRounds } from '../src/index.js';
+import runProgressionGame from '../src/games/progression.js';
 
-mathProgression(numberOfRounds);
+runProgressionGame();
