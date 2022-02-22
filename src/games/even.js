@@ -7,9 +7,8 @@ const isEven = (number) => number % 2 === 0;
 
 const generateRound = () => {
   const currentNumber = getRandomNumber(0, 100);
-  const correctAnswer = (isEven(currentNumber)) ? 'yes' : 'no';
-  const resultExpression = [currentNumber, correctAnswer];
-  return resultExpression;
+  const correctAnswer = isEven(currentNumber) ? 'yes' : 'no';
+  return [currentNumber, correctAnswer];
 };
 
 const runEvenGame = () => runGameEngine(generateRound, evenDescription);

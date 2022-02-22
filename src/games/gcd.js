@@ -21,8 +21,7 @@ const generateRound = () => {
   const secondNumber = getRandomNumber(1, 100);
   const currentExpression = `${firstNumber} ${secondNumber}`;
   const correctAnswer = String(getBiggestDevider(firstNumber, secondNumber));
-  const resultExpression = [currentExpression, correctAnswer];
-  return resultExpression;
+  return [currentExpression, correctAnswer];
 };
 
 const runGcdGAme = () => runGameEngine(generateRound, gcdDescription);

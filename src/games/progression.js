@@ -3,27 +3,27 @@ import getRandomNumber from '../utils.js';
 
 const progressionDescription = 'What number is missing in the progression?';
 
-const genProgression = (minStartValue, maxStartValue, minLength, maxLength, minStep, maxStep) => {
-  const progressionLength = getRandomNumber(minLength, maxLength);
-  const progressionStep = getRandomNumber(minStep, maxStep);
-  let valueOfProgression = getRandomNumber(minStartValue, maxStartValue);
+const genProgression = (startValue, progressionStep, progressionLength) => {
   const progressionArray = [];
+  let value = startValue;
   for (let i = 1; i <= progressionLength; i += 1) {
-    progressionArray.push(valueOfProgression);
-    valueOfProgression += progressionStep;
+    progressionArray.push(value);
+    value += progressionStep;
   }
   return progressionArray;
 };
 
 const generateRound = () => {
-  const currentProgressionArray = genProgression(0, 100, 5, 10, 1, 5);
-  const lostValue = currentProgressionArray[getRandomNumber(0, currentProgressionArray.length - 1)];
-  currentProgressionArray[currentProgressionArray.indexOf(lostValue)] = '..';
+  const startValue = getRandomNumber(0, 100);
+  const progressionStep = getRandomNumber(1, 5);
+  const progressionLength = getRandomNumber(5, 10);
+  const lostValueIndex = getRandomNumber(0, progressionLength - 1);
+  const progression = genProgression(startValue, progressionStep, progressionLength);
+  const correctAnswer = String(progression[lostValueIndex]);
+  progression[lostValueIndex] = '..';
   const separator = ' ';
-  const currentExpression = currentProgressionArray.join(separator);
-  const correctAnswer = String(lostValue);
-  const resultExpression = [currentExpression, correctAnswer];
-  return resultExpression;
+  const currentExpression = progression.join(separator);
+  return [currentExpression, correctAnswer];
 };
 
 const runProgressionGame = () => runGameEngine(generateRound, progressionDescription);

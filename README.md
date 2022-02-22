@@ -11,23 +11,23 @@
 
 ### Установка и запуск игры "Проверка на четность":
 #$ brain-even
-[![asciicast](https://asciinema.org/a/2QFyNd3tg4l9gmBouBTFjUFLO.svg)](https://asciinema.org/a/2QFyNd3tg4l9gmBouBTFjUFLO)
+[![asciicast](https://asciinema.org/a/IKILYR1eC8R4YOWuRo7ystKbQ.svg)](https://asciinema.org/a/IKILYR1eC8R4YOWuRo7ystKbQ)
 
 ### Запуск игры "Калькулятор":
 #$ brain-calc
-[![asciicast](https://asciinema.org/a/Oz9Qa91ZBy1IEiVVi7Sznx0Gl.svg)](https://asciinema.org/a/Oz9Qa91ZBy1IEiVVi7Sznx0Gl)
+[![asciicast](https://asciinema.org/a/q0xD03zp0czYKzU0ZX4C8hDQP.svg)](https://asciinema.org/a/q0xD03zp0czYKzU0ZX4C8hDQP)
 
 ### Запуск игры "НОД":
 #$ brain-gcd
-[![asciicast](https://asciinema.org/a/APGxvfnGpF9UFZ5VJ72op4i19.svg)](https://asciinema.org/a/APGxvfnGpF9UFZ5VJ72op4i19)
+[![asciicast](https://asciinema.org/a/hFgmVJuT0duvSbgGJvZ0EcIjs.svg)](https://asciinema.org/a/hFgmVJuT0duvSbgGJvZ0EcIjs)
 
 ### Запуск игры "Арифметическая прогрессия":
 #$ brain-progression
-[![asciicast](https://asciinema.org/a/PTtcUKRvOdlpQYAwUZDhLR8G8.svg)](https://asciinema.org/a/PTtcUKRvOdlpQYAwUZDhLR8G8)
+[![asciicast](https://asciinema.org/a/TxXlGQVuZKjPNJt6DV36PzFP9.svg)](https://asciinema.org/a/TxXlGQVuZKjPNJt6DV36PzFP9)
 
 ### Запуск игры "Простое ли число":
 #$ brain-prime
-[![asciicast](https://asciinema.org/a/jjGKtxkw6FCNY1DHpaTyyDaJM.svg)](https://asciinema.org/a/jjGKtxkw6FCNY1DHpaTyyDaJM)
+[![asciicast](https://asciinema.org/a/sxHE6sLO5nkiQNR6ZV38GgGW8.svg)](https://asciinema.org/a/sxHE6sLO5nkiQNR6ZV38GgGW8)
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Viltorn/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Viltorn/frontend-project-lvl1/actions)

@@ -11,15 +11,13 @@ const isPrime = (number) => {
   while (number % devider !== 0) {
     devider += 1;
   }
-  const result = (devider === number);
-  return result;
+  return (devider === number);
 };
 
 const generateRound = () => {
   const currentNumber = getRandomNumber(1, 100);
-  const correctAnswer = (isPrime(currentNumber) === true) ? 'yes' : 'no';
-  const resultExpression = [currentNumber, correctAnswer];
-  return resultExpression;
+  const correctAnswer = isPrime(currentNumber) ? 'yes' : 'no';
+  return [currentNumber, correctAnswer];
 };
 
 const runPrimeGame = () => runGameEngine(generateRound, primeDescription);
