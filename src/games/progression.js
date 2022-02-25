@@ -4,13 +4,13 @@ import getRandomNumber from '../utils.js';
 const progressionDescription = 'What number is missing in the progression?';
 
 const genProgression = (startValue, progressionStep, progressionLength) => {
-  const progressionArray = [];
+  const progression = [];
   let value = startValue;
   for (let i = 1; i <= progressionLength; i += 1) {
-    progressionArray.push(value);
+    progression.push(value);
     value += progressionStep;
   }
-  return progressionArray;
+  return progression;
 };
 
 const generateRound = () => {

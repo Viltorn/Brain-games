@@ -1,12 +1,11 @@
 import readlineSync from 'readline-sync';
 // eslint-disable-next-line import/no-unresolved
-import greetings from './cli.js';
-
 const numberOfRounds = 3;
 
 const runGameEngine = (generateRound, gameDescription) => {
   console.log('Welcome to the Brain Games!');
-  const userName = greetings();
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
   console.log(gameDescription);
   for (let i = 1; i <= numberOfRounds; i += 1) {
     const [question, answer] = generateRound();

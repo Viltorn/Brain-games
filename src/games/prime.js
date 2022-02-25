@@ -11,7 +11,7 @@ const isPrime = (number) => {
   while (number % devider !== 0) {
     devider += 1;
   }
-  return (devider === number);
+  return devider === number;
 };
 
 const generateRound = () => {
