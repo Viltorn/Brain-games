@@ -1,31 +1,32 @@
-### Проект "Игры разума"
-«Игры разума» — набор из пяти консольных игр, позволяющих улучшить работу мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагается пройти ее заново. 
+### Brain-games
 
-### Установка 
+This is a kit of five console games that help train your brain. In each game you are asked of 3 questions, if you give correct answer to all questions - you win, wrong answer finishes a game and you are proposed to start over.
 
-1. Установите глобально Node.js последней версии в систему.
-2. Склонируйте созданный репозиторий проекта локально - команда git clone.
-3. Перейдите в корневой каталог проекта команда - cd "путь до каталога".
-4. Выполните установку зависимостей - команда make install.
-5. Установите проект глобально в систему - команда npm link
+### Installation
 
-### Установка и запуск игры "Проверка на четность":
+1. Install Node.js globally.
+2. Clone this project (git clone).
+3. Go to game folder.
+4. Write "make install" in terminal to install all dependincies.
+5. Install project globally into the system (npm link).
+
+### Installation and game "Even" start:
 #$ brain-even
 [![asciicast](https://asciinema.org/a/IKILYR1eC8R4YOWuRo7ystKbQ.svg)](https://asciinema.org/a/IKILYR1eC8R4YOWuRo7ystKbQ)
 
-### Запуск игры "Калькулятор":
+### Game "Calculator":
 #$ brain-calc
 [![asciicast](https://asciinema.org/a/q0xD03zp0czYKzU0ZX4C8hDQP.svg)](https://asciinema.org/a/q0xD03zp0czYKzU0ZX4C8hDQP)
 
-### Запуск игры "НОД":
+### Game "GCD":
 #$ brain-gcd
 [![asciicast](https://asciinema.org/a/hFgmVJuT0duvSbgGJvZ0EcIjs.svg)](https://asciinema.org/a/hFgmVJuT0duvSbgGJvZ0EcIjs)
 
-### Запуск игры "Арифметическая прогрессия":
+### Game "Progression":
 #$ brain-progression
 [![asciicast](https://asciinema.org/a/TxXlGQVuZKjPNJt6DV36PzFP9.svg)](https://asciinema.org/a/TxXlGQVuZKjPNJt6DV36PzFP9)
 
-### Запуск игры "Простое ли число":
+### Game "Prime number":
 #$ brain-prime
 [![asciicast](https://asciinema.org/a/sxHE6sLO5nkiQNR6ZV38GgGW8.svg)](https://asciinema.org/a/sxHE6sLO5nkiQNR6ZV38GgGW8)
 
